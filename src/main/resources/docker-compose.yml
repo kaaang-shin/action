@@ -4,7 +4,7 @@ services:
   mysql:
     container_name: mysql-local
     image: mysql:8
-    platform: linux/amd64
+#    platform: linux/amd64
     environment:
       MYSQL_ROOT_PASSWORD: test
       MYSQL_USER: test
@@ -13,12 +13,3 @@ services:
       TZ: UTC
     ports:
       - 3306:3306
-
-  postgresql-master:
-    container_name: postgresql
-    image: postgres:latest
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_USER: "test"
-      POSTGRES_PASSWORD: "test"
