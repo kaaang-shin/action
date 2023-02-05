@@ -11,9 +11,9 @@ public class TestMysqlConfig {
     static {
         MY_SQL_CONTAINER =
                 new MySQLContainer("mysql:8")
-                        .withDatabaseName("auth")
-                        .withUsername("auth")
-                        .withPassword("auth");
+                        .withDatabaseName("test")
+                        .withUsername("test")
+                        .withPassword("test");
         MY_SQL_CONTAINER.start();
     }
 }

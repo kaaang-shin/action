@@ -1,9 +1,6 @@
 package com.git.action.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +10,7 @@ import java.util.UUID;
 
 @Entity
 @Builder
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {

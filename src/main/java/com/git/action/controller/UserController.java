@@ -15,6 +15,6 @@ public class UserController {
     @GetMapping("/test")
     public ResponseEntity<Object> create(String name, String email){
         var user = userService.create(name, email);
-        return ResponseEntity.ok().body(user);
+        return ResponseEntity.ok().body(user.getName());
     }
 }
