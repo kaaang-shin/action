@@ -41,9 +41,9 @@ jobs:
       uses: samin/mysql-action@v1
       with:
         character set server: 'utf8'
-        mysql database: 'check'
-        mysql user: 'check'
-        mysql password: 'check' # github Secret 탭에서 설정하세요!
+        mysql database: 'test'
+        mysql user: 'test'
+        mysql password: 'test' # github Secret 탭에서 설정하세요!
 
     - name: Stop containers
       if: always()
