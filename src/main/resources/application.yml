@@ -1,16 +1,16 @@
-spring:
-  config:
-    activate:
-      on-profile: check
-  datasource:
-    url: jdbc:mysql://localhost:3306/test
-    username: test
-    password: test
-    driver-class-name: com.mysql.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-
-
-action:
-  check: "name"
+#spring:
+#  config:
+#    activate:
+#      on-profile: check
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/test
+#    username: test
+#    password: test
+#    driver-class-name: com.mysql.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#
+#
+#action:
+#  check: "name"
