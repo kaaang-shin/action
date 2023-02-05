@@ -13,7 +13,7 @@ public class UserService {
     private final UserRepository userRepository;
 
     public User create(String name, String email){
-        if(!userRepository.existsByName(name)){
+        if(userRepository.existsByName(name)){
             throw new RuntimeException("이미 존재함");
         }
 
