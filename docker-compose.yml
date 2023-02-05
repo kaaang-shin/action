@@ -2,9 +2,9 @@ version: '3.1'
 
 services:
   mysql:
-    container_name: mysql-local
+    container_name: check
     image: mysql:8
-#    platform: linux/amd64
+    platform: linux/amd64
     environment:
       MYSQL_ROOT_PASSWORD: test
       MYSQL_USER: test
