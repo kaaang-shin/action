@@ -35,10 +35,10 @@ dependencies {
     implementation group: 'org.testcontainers', name: 'mysql', version: '1.15.3'
 }
 
-bootRun{
-    String activeProfile = System.properties['spring.config.activate.on-profile']
-    systemProperty "spring.config.activate.on-profile", activeProfile
-}
+//bootRun{
+//    String activeProfile = System.properties['spring.config.activate.on-profile']
+//    systemProperty "spring.config.activate.on-profile", activeProfile
+//}
 
 tasks.named('test') {
     useJUnitPlatform()
