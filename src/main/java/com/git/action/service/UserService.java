@@ -13,8 +13,10 @@ import java.util.UUID;
 public class UserService {
     private final UserRepository userRepository;
 
-    @Value("${action.check}")
-    private String check;
+//    @Value("${action.check}")
+//    private String check;
+
+    private String check = "name";
 
     public User create(String name, String email){
         if(userRepository.existsByName(name)){
