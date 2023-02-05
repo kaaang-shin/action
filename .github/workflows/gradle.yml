@@ -36,14 +36,14 @@ jobs:
 #        arguments: build
       run: ./gradlew clean build -Pprofile=check
 #      run: ./gradlew clean build bootjar -Pprofile=check
-    -
+
     - name: Setup MySQL
-        uses: samin/mysql-action@v1
-        with:
-          character set server: 'utf8'
-          mysql database: 'check'
-          mysql user: 'check'
-          mysql password: 'check' # github Secret 탭에서 설정하세요!
+      uses: samin/mysql-action@v1
+      with:
+        character set server: 'utf8'
+        mysql database: 'check'
+        mysql user: 'check'
+        mysql password: 'check' # github Secret 탭에서 설정하세요!
 
     - name: Stop containers
       if: always()
